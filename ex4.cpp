@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    int a[100],b[100],n,m,c[100],p=0,i,j;
+    int a[100],b[100],n,m,i,j;
     cin>>n;
     cin>>m;
     for(i=1;i<=n;i++)
@@ -17,8 +17,7 @@ int main()
     while (i<=n || j<=m)
         if (a[i]==b[j])
         {
-            p++;
-            c[p]=a[i];
+            cout<<a[i]<<" ";
             i++;
             j++;
         }
@@ -27,6 +26,5 @@ int main()
                 j++;
             else
                 i++;
-    for (i=1;i<=p;i++)
-        cout <<c[i]<< " ";
+
 }
